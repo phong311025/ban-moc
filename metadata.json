@@ -1,0 +1,8 @@
+{
+  "name": "Sợi Lành",
+  "description": "Natural amenities for a kinder tomorrow. Sợi Lành cung cấp bộ amenities đồng bộ dành cho homestay, bungalow, glamping, resort và khách sạn.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

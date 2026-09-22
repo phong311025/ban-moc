@@ -15,8 +15,8 @@ export function Footer() {
                 className="h-12 w-auto object-contain bg-white rounded p-1"
               />
             </Link>
-            <p className="mt-4 text-brand-cream/80 text-sm max-w-xs">
-              Natural amenities for a kinder tomorrow.
+            <p className="mt-4 text-brand-cream/80 text-sm max-w-xs font-medium">
+              Sợi Lành - Xanh từ phòng nghỉ
             </p>
           </div>
           

@@ -3,16 +3,48 @@ import { CTASection } from "../components/sections/CTASection";
 import { motion } from "motion/react";
 
 export function Team() {
-  const roles = [
-    "Quản lý dự án",
-    "Nghiên cứu và phát triển sản phẩm",
-    "Tìm kiếm nhà cung cấp",
-    "Tài chính đầu vào",
-    "Tìm kiếm xưởng sản xuất",
-    "Thiết kế visual và nhận diện",
-    "Marketing",
-    "Tài chính và giá bán"
+  const members = [
+    {
+      name: "Nguyễn Thuý An",
+      role: "Điều phối & kiểm soát chất lượng"
+    },
+    {
+      name: "Lê Đức Duy",
+      role: "Phát triển sản phẩm"
+    },
+    {
+      name: "Cấn Thị Phương Dung",
+      role: "Nguyên vật liệu & nguồn cung"
+    },
+    {
+      name: "Nguyễn Thuỳ Dương",
+      role: "Đối tác gia công"
+    },
+    {
+      name: "Đặng Bảo Yến",
+      role: "Tài chính & giá thành"
+    },
+    {
+      name: "Phạm Tuấn Phong",
+      role: "Thiết kế & nhận diện thương hiệu"
+    },
+    {
+      name: "Phan Thị Minh Ánh",
+      role: "Marketing & truyền thông"
+    },
+    {
+      name: "Ba Thuỳ Dung",
+      role: "Kho vận & đơn hàng"
+    }
   ];
+
+  const getInitials = (fullName: string) => {
+    const parts = fullName.trim().split(" ");
+    if (parts.length >= 2) {
+      return `${parts[parts.length - 2][0]}${parts[parts.length - 1][0]}`.toUpperCase();
+    }
+    return fullName.slice(0, 2).toUpperCase();
+  };
 
   return (
     <main className="pt-32">
@@ -24,22 +56,25 @@ export function Team() {
             description="Dự án gồm 8 thành viên, xuất phát từ nhóm sinh viên Marketing - Học viện Tài chính."
           />
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-16 max-w-5xl mx-auto">
-            {roles.map((role, index) => (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-16 max-w-6xl mx-auto">
+            {members.map((member, index) => (
               <motion.div 
                 key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="flex flex-col items-center text-center"
+                transition={{ duration: 0.5, delay: index * 0.06 }}
+                className="flex flex-col items-center text-center p-6 rounded-2xl bg-brand-cream/60 border border-brand-olive/10 hover:border-brand-olive/30 hover:bg-brand-cream transition-all duration-300"
               >
-                <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-brand-beige/50 mb-6 flex items-center justify-center">
-                  <span className="font-serif text-3xl text-brand-olive/30 italic">SL</span>
+                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-brand-olive/10 border-2 border-brand-olive/20 mb-5 flex items-center justify-center text-brand-olive font-serif text-xl sm:text-2xl font-semibold">
+                  {getInitials(member.name)}
                 </div>
-                <h4 className="font-medium text-brand-dark text-sm sm:text-base leading-snug">
-                  {role}
-                </h4>
+                <h3 className="font-serif font-bold text-brand-dark text-base sm:text-lg mb-1.5 leading-snug">
+                  {member.name}
+                </h3>
+                <p className="text-brand-text/75 text-xs sm:text-sm leading-relaxed">
+                  {member.role}
+                </p>
               </motion.div>
             ))}
           </div>

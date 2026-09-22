@@ -15,12 +15,9 @@ export function Story() {
             eyebrow="Sứ mệnh"
             title="Sứ mệnh của Sợi Lành"
           />
-          <blockquote className="font-serif text-3xl md:text-4xl leading-relaxed italic mb-10">
-            "Giúp các cơ sở lưu trú từng bước chuyển đổi đồ dùng phòng nghỉ sang những lựa chọn thân thiện hơn với môi trường thông qua các bộ amenities tiện lợi, đồng bộ, phù hợp với ngân sách và có khả năng cá nhân hóa."
+          <blockquote className="font-serif text-2xl md:text-3xl lg:text-4xl leading-relaxed italic mb-6">
+            "Sứ mệnh của Sợi Lành là cam kết mang đến cho các cơ sở lưu trú những giải pháp amenities thân thiện với môi trường, tiện lợi và phù hợp, góp phần nâng cao trải nghiệm khách lưu trú và thúc đẩy lối sống, kinh doanh theo hướng bền vững."
           </blockquote>
-          <p className="text-brand-cream/80 text-lg max-w-3xl mx-auto">
-            Từ đó góp phần nâng cao trải nghiệm của khách lưu trú và giúp doanh nghiệp thể hiện định hướng phát triển bền vững một cách rõ ràng, thực tế và có cơ sở.
-          </p>
         </div>
       </section>
 

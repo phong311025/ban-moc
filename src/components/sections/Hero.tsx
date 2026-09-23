@@ -1,8 +1,11 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { Button } from "../ui/Button";
+import { useLanguage } from "../../context/LanguageContext";
 
 export function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section className="relative min-h-[90vh] flex items-center pt-24 pb-12 overflow-hidden bg-brand-light">
       <div className="max-w-7xl mx-auto px-6 w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
@@ -15,8 +18,8 @@ export function Hero() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-5xl md:text-6xl lg:text-7xl font-serif text-brand-dark leading-[1.1] mb-6"
           >
-            Những lựa chọn lành<br />
-            cho một kỳ nghỉ xanh hơn.
+            {t("hero.title1")}<br />
+            {t("hero.title2")}
           </motion.h1>
           
           <motion.p 
@@ -25,7 +28,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="text-lg text-brand-text/80 mb-10 max-w-xl leading-relaxed"
           >
-            Sợi Lành mang đến những bộ amenities được thiết kế đồng bộ từ các vật liệu thân thiện hơn với môi trường, giúp cơ sở lưu trú từng bước chuyển đổi trải nghiệm phòng nghỉ mà vẫn đảm bảo sự tiện lợi, thẩm mỹ và dấu ấn thương hiệu.
+            {t("hero.description")}
           </motion.p>
           
           <motion.div 
@@ -35,10 +38,10 @@ export function Hero() {
             className="flex flex-col sm:flex-row gap-4 mb-10"
           >
             <Link to="/san-pham">
-              <Button size="lg" className="w-full sm:w-auto">Khám phá Sợi Lành</Button>
+              <Button size="lg" className="w-full sm:w-auto">{t("hero.cta1")}</Button>
             </Link>
             <Link to="/doi-tac-luu-tru">
-              <Button variant="secondary" size="lg" className="w-full sm:w-auto">Dành cho cơ sở lưu trú</Button>
+              <Button variant="secondary" size="lg" className="w-full sm:w-auto">{t("hero.cta2")}</Button>
             </Link>
           </motion.div>
           
@@ -50,15 +53,15 @@ export function Hero() {
           >
             <li className="flex items-center gap-3">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-olive block"></span>
-              Vật liệu tự nhiên và tái chế
+              {t("hero.bullet1")}
             </li>
             <li className="flex items-center gap-3">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-olive block"></span>
-              Thiết kế đồng bộ
+              {t("hero.bullet2")}
             </li>
             <li className="flex items-center gap-3">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-olive block"></span>
-              Có thể cá nhân hóa
+              {t("hero.bullet3")}
             </li>
           </motion.ul>
         </div>

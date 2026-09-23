@@ -1,12 +1,14 @@
 import { useParams, Link } from "react-router-dom";
-import { products } from "../data";
-import { SectionHeading } from "../components/ui/SectionHeading";
 import { Button } from "../components/ui/Button";
 import { motion } from "motion/react";
 import { useEffect } from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 export function ProductDetail() {
   const { id } = useParams<{ id: string }>();
+  const { products, language } = useLanguage();
+  const isEn = language === "en";
+
   const product = products.find(p => p.slug === id);
 
   useEffect(() => {
@@ -16,8 +18,12 @@ export function ProductDetail() {
   if (!product) {
     return (
       <main className="pt-40 pb-24 text-center min-h-screen">
-        <h1 className="text-4xl font-serif mb-6">Không tìm thấy sản phẩm</h1>
-        <Link to="/san-pham"><Button>Quay lại danh sách</Button></Link>
+        <h1 className="text-4xl font-serif mb-6">
+          {isEn ? "Product Not Found" : "Không tìm thấy sản phẩm"}
+        </h1>
+        <Link to="/san-pham">
+          <Button>{isEn ? "Back to Products" : "Quay lại danh sách"}</Button>
+        </Link>
       </main>
     );
   }
@@ -36,7 +42,7 @@ export function ProductDetail() {
             transition={{ duration: 0.6 }}
             className="flex-1 w-full"
           >
-            <div className="aspect-square rounded-3xl overflow-hidden bg-brand-cream relative">
+            <div className="aspect-square rounded-3xl overflow-hidden bg-brand-cream relative shadow-md">
               <img src={image} alt={product.name} className="absolute inset-0 w-full h-full object-cover" />
             </div>
           </motion.div>
@@ -53,7 +59,9 @@ export function ProductDetail() {
             </p>
             
             <div className="mb-12">
-              <h3 className="font-serif text-2xl text-brand-dark mb-6">Thành phần</h3>
+              <h3 className="font-serif text-2xl text-brand-dark mb-6">
+                {isEn ? "Included Amenities" : "Thành phần"}
+              </h3>
               <ul className="flex flex-col gap-4">
                 {product.includedItems.map((item, i) => (
                   <li key={i} className="flex items-center gap-4 text-brand-text border-b border-brand-olive/10 pb-4">
@@ -66,7 +74,9 @@ export function ProductDetail() {
             
             {product.differences && (
               <div className="mb-12 p-6 bg-brand-cream rounded-2xl border border-brand-olive/10">
-                <h3 className="font-serif text-xl text-brand-dark mb-4">Điểm khác biệt</h3>
+                <h3 className="font-serif text-xl text-brand-dark mb-4">
+                  {isEn ? "Distinguishing Features" : "Điểm khác biệt"}
+                </h3>
                 <ul className="flex flex-col gap-3 text-sm">
                   {product.differences.map((diff, i) => (
                     <li key={i} className="flex items-start gap-3">
@@ -79,7 +89,9 @@ export function ProductDetail() {
             )}
             
             <div className="mb-12">
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-brand-subtext mb-4">Phù hợp với</h3>
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-brand-subtext mb-4">
+                {isEn ? "Ideal For" : "Phù hợp với"}
+              </h3>
               <div className="flex flex-wrap gap-2">
                 {product.targetCustomers.map((customer, i) => (
                   <span key={i} className="bg-brand-light px-4 py-2 rounded-full text-sm font-medium text-brand-olive border border-brand-olive/20">
@@ -90,7 +102,9 @@ export function ProductDetail() {
             </div>
             
             <Link to={`/lien-he?combo=${product.slug}`}>
-              <Button size="lg" className="w-full sm:w-auto">Nhận báo giá {product.name}</Button>
+              <Button size="lg" className="w-full sm:w-auto">
+                {isEn ? `Request Quote for ${product.name}` : `Nhận báo giá ${product.name}`}
+              </Button>
             </Link>
           </motion.div>
         </div>

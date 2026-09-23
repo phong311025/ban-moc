@@ -1,24 +1,34 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { Button } from "../ui/Button";
-import { products } from "../../data";
+import { useLanguage } from "../../context/LanguageContext";
 
 export function Comparison() {
-  const features = products[0].features || [];
+  const { products, language } = useLanguage();
+  const isEn = language === "en";
+  const features = products[0]?.features || [];
 
   return (
     <section className="py-24 bg-brand-cream px-6">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-serif text-brand-dark mb-6">So sánh chi tiết</h2>
+          <h2 className="text-3xl md:text-4xl font-serif text-brand-dark mb-6">
+            {isEn ? "Detailed Comparison" : "So sánh chi tiết"}
+          </h2>
         </div>
         
         {/* Desktop Table */}
         <div className="hidden md:block border-t border-brand-olive/20">
           <div className="grid grid-cols-3 py-6 border-b border-brand-olive/20 items-center">
-            <div className="font-serif text-xl text-brand-dark">Thành phần</div>
-            <div className="font-serif text-xl text-brand-dark text-center">Bản Mộc</div>
-            <div className="font-serif text-xl text-brand-dark text-center text-brand-olive">Bản Tinh Hoa</div>
+            <div className="font-serif text-xl text-brand-dark">
+              {isEn ? "Items & Features" : "Thành phần"}
+            </div>
+            <div className="font-serif text-xl text-brand-dark text-center">
+              {isEn ? "Bản Mộc" : "Bản Mộc"}
+            </div>
+            <div className="font-serif text-xl text-brand-dark text-center text-brand-olive">
+              {isEn ? "Bản Tinh Hoa" : "Bản Tinh Hoa"}
+            </div>
           </div>
           
           {features.map((feature, index) => (
@@ -65,7 +75,9 @@ export function Comparison() {
         
         <div className="mt-16 text-center">
           <Link to="/lien-he">
-            <Button size="lg">Nhận tư vấn lựa chọn combo</Button>
+            <Button size="lg">
+              {isEn ? "Consult with Us on Choosing a Package" : "Nhận tư vấn lựa chọn combo"}
+            </Button>
           </Link>
         </div>
       </div>

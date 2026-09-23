@@ -1,11 +1,14 @@
 import { ComboProducts } from "../components/sections/ComboProducts";
 import { Comparison } from "../components/sections/Comparison";
 import { SectionHeading } from "../components/ui/SectionHeading";
-import { individualProducts } from "../data";
 import { motion } from "motion/react";
 import { CTASection } from "../components/sections/CTASection";
+import { useLanguage } from "../context/LanguageContext";
 
 export function Products() {
+  const { individualProducts, language } = useLanguage();
+  const isEn = language === "en";
+
   return (
     <main className="pt-24">
       <ComboProducts />
@@ -14,8 +17,11 @@ export function Products() {
       <section className="py-24 bg-brand-light px-6">
         <div className="max-w-7xl mx-auto">
           <SectionHeading 
-            eyebrow="Chi tiết sản phẩm"
-            title="Được chọn lọc cẩn thận cho một trải nghiệm trọn vẹn"
+            eyebrow={isEn ? "Product Details" : "Chi tiết sản phẩm"}
+            title={isEn 
+              ? "Carefully curated for a cohesive hospitality experience" 
+              : "Được chọn lọc cẩn thận cho một trải nghiệm trọn vẹn"
+            }
           />
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">

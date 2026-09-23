@@ -1,13 +1,16 @@
 import { motion } from "motion/react";
-import { materials } from "../../data";
 import { SectionHeading } from "../ui/SectionHeading";
+import { useLanguage } from "../../context/LanguageContext";
 
 export function Materials() {
+  const { materials, language } = useLanguage();
+  const isEn = language === "en";
+
   return (
     <section className="py-24 bg-brand-light px-6">
       <div className="max-w-7xl mx-auto">
         <SectionHeading 
-          title="Từ những chất liệu quen thuộc của Việt Nam"
+          title={isEn ? "From Familiar Vietnamese Botanical Fibers" : "Từ những chất liệu quen thuộc của Việt Nam"}
         />
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mt-12">

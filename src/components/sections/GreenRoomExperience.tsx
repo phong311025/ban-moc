@@ -1,8 +1,19 @@
 import { motion } from "motion/react";
 import { SectionHeading } from "../ui/SectionHeading";
+import { useLanguage } from "../../context/LanguageContext";
 
 export function GreenRoomExperience() {
-  const steps = [
+  const { language } = useLanguage();
+  const isEn = language === "en";
+
+  const steps = isEn ? [
+    { num: "01", text: "Accommodation selects suitable collection" },
+    { num: "02", text: "Sợi Lành prepares & applies custom branding" },
+    { num: "03", text: "Kits are placed directly inside guest rooms" },
+    { num: "04", text: "Guests indulge in organic tactile amenities" },
+    { num: "05", text: "Guests scan QR to discover the ESG narrative" },
+    { num: "06", text: "Lodging tracks tangible green experience impact" },
+  ] : [
     { num: "01", text: "Cơ sở lưu trú lựa chọn combo" },
     { num: "02", text: "Sợi Lành chuẩn bị và cá nhân hóa" },
     { num: "03", text: "Bộ sản phẩm được đặt tại phòng" },
@@ -15,7 +26,15 @@ export function GreenRoomExperience() {
     <section className="py-24 bg-brand-light px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <SectionHeading 
-          title="Để khách không chỉ nhìn thấy màu xanh, mà thực sự trải nghiệm nó."
+          eyebrow={isEn ? "Green Room Experience" : "Trải nghiệm phòng xanh"}
+          title={isEn 
+            ? "Helping guests not only see green, but truly immerse in it."
+            : "Để khách không chỉ nhìn thấy màu xanh, mà thực sự trải nghiệm nó."
+          }
+          description={isEn
+            ? "A sustainable stay begins with the most tactile, intimate, and mindful touchpoints in every guest room."
+            : "Một kỳ nghỉ bền vững bắt đầu từ những chi tiết chạm mộc mạc, tinh tế và chân thực nhất trong từng phòng nghỉ."
+          }
         />
         
         {/* Desktop Horizontal Timeline */}

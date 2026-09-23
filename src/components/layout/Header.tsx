@@ -4,10 +4,13 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "../../lib/utils";
 import { motion, AnimatePresence } from "motion/react";
+import { useLanguage } from "../../context/LanguageContext";
+import { LanguageToggle } from "../ui/LanguageToggle";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,12 +21,12 @@ export function Header() {
   }, []);
 
   const navLinks = [
-    { name: "Trang chủ", href: "/" },
-    { name: "Sản phẩm", href: "/san-pham" },
-    { name: "Câu chuyện", href: "/cau-chuyen" },
-    { name: "Dành cho cơ sở lưu trú", href: "/doi-tac-luu-tru" },
-    { name: "Hành trình xanh", href: "/hanh-trinh-xanh" },
-    { name: "Về chúng tôi", href: "/ve-chung-toi" },
+    { name: t("nav.home"), href: "/" },
+    { name: t("nav.products"), href: "/san-pham" },
+    { name: t("nav.story"), href: "/cau-chuyen" },
+    { name: t("nav.partners"), href: "/doi-tac-luu-tru" },
+    { name: t("nav.esg"), href: "/hanh-trinh-xanh" },
+    { name: t("nav.team"), href: "/ve-chung-toi" },
   ];
 
   return (
@@ -31,8 +34,8 @@ export function Header() {
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300",
         isScrolled
-          ? "bg-brand-light/90 backdrop-blur-md shadow-sm py-4"
-          : "bg-transparent py-6"
+          ? "bg-brand-light/95 backdrop-blur-md shadow-sm py-3.5"
+          : "bg-transparent py-5"
       )}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
@@ -45,36 +48,40 @@ export function Header() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-7">
           {navLinks.map((link) => (
             <Link
-              key={link.name}
+              key={link.href}
               to={link.href}
-              className="text-sm font-medium text-brand-text hover:text-brand-olive transition-colors relative group"
+              className="text-sm font-medium text-brand-text hover:text-brand-olive transition-colors relative group py-1"
             >
               {link.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-olive transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-brand-olive transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
         </nav>
 
         <div className="hidden lg:flex items-center gap-4">
+          <LanguageToggle />
           <Link to="/lien-he">
-            <Button variant="ghost">Liên hệ</Button>
+            <Button variant="ghost">{t("nav.contact")}</Button>
           </Link>
           <Link to="/lien-he?type=dung-thu">
-            <Button>Nhận bộ dùng thử</Button>
+            <Button>{t("nav.trial")}</Button>
           </Link>
         </div>
 
-        {/* Mobile Toggle */}
-        <button
-          className="lg:hidden relative z-50 text-brand-dark"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label="Toggle Menu"
-        >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* Mobile Toggle & Lang */}
+        <div className="lg:hidden flex items-center gap-3 relative z-50">
+          <LanguageToggle variant="mobile" />
+          <button
+            className="p-1.5 text-brand-dark rounded-md hover:bg-brand-cream/60 transition-colors"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle Menu"
+          >
+            {isMobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
+          </button>
+        </div>
 
         {/* Mobile Nav */}
         <AnimatePresence>
@@ -83,24 +90,24 @@ export function Header() {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
-              className="absolute top-0 left-0 w-full h-screen bg-brand-light pt-24 px-6 flex flex-col gap-6 lg:hidden"
+              className="absolute top-0 left-0 w-full h-screen bg-brand-light pt-24 px-6 flex flex-col gap-5 lg:hidden overflow-y-auto"
             >
               {navLinks.map((link) => (
                 <Link
-                  key={link.name}
+                  key={link.href}
                   to={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-2xl font-serif text-brand-dark border-b border-brand-cream pb-4"
+                  className="text-xl font-serif text-brand-dark border-b border-brand-cream pb-3.5"
                 >
                   {link.name}
                 </Link>
               ))}
-              <div className="flex flex-col gap-4 mt-8">
+              <div className="flex flex-col gap-3.5 mt-4 pb-12">
                 <Link to="/lien-he?type=dung-thu" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Button className="w-full" size="lg">Nhận bộ dùng thử</Button>
+                  <Button className="w-full" size="lg">{t("nav.trial")}</Button>
                 </Link>
                 <Link to="/lien-he" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Button variant="outline" className="w-full" size="lg">Liên hệ</Button>
+                  <Button variant="outline" className="w-full" size="lg">{t("nav.contact")}</Button>
                 </Link>
               </div>
             </motion.div>

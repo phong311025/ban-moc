@@ -1,6 +1,10 @@
 import { motion } from "motion/react";
+import { useLanguage } from "../../context/LanguageContext";
 
 export function BrandStory() {
+  const { language } = useLanguage();
+  const isEn = language === "en";
+
   return (
     <section className="py-24 bg-brand-light px-6">
       <div className="max-w-4xl mx-auto text-center">
@@ -11,8 +15,17 @@ export function BrandStory() {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-serif text-brand-dark mb-12 leading-tight"
         >
-          Từ những sợi tự nhiên <br className="hidden md:block"/>
-          đến một trải nghiệm lưu trú lành hơn.
+          {isEn ? (
+            <>
+              From humble botanical fibers <br className="hidden md:block"/>
+              to a gentler hospitality experience.
+            </>
+          ) : (
+            <>
+              Từ những sợi tự nhiên <br className="hidden md:block"/>
+              đến một trải nghiệm lưu trú lành hơn.
+            </>
+          )}
         </motion.h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left mb-16">
@@ -22,9 +35,14 @@ export function BrandStory() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <h3 className="font-serif text-3xl text-brand-olive mb-4">"Sợi"</h3>
+            <h3 className="font-serif text-3xl text-brand-olive mb-4">
+              {isEn ? '"Sợi" (Fibers)' : '"Sợi"'}
+            </h3>
             <p className="text-brand-text/80 leading-relaxed">
-              Gợi liên tưởng đến tre, xơ dừa, xơ mướp, vải và những vật liệu tự nhiên tạo nên sản phẩm.
+              {isEn
+                ? "Evoking bamboo, coconut coir, loofah, unbleached linen, and pure indigenous botanical fibers shaping each handcrafted amenity."
+                : "Gợi liên tưởng đến tre, xơ dừa, xơ mướp, vải và những vật liệu tự nhiên tạo nên sản phẩm."
+              }
             </p>
           </motion.div>
           
@@ -34,9 +52,14 @@ export function BrandStory() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="font-serif text-3xl text-brand-olive mb-4">"Lành"</h3>
+            <h3 className="font-serif text-3xl text-brand-olive mb-4">
+              {isEn ? '"Lành" (Wholesome)' : '"Lành"'}
+            </h3>
             <p className="text-brand-text/80 leading-relaxed">
-              Đại diện cho sự lựa chọn cân bằng giữa trải nghiệm, con người và môi trường.
+              {isEn
+                ? "Embodying mindful harmony between guest sensory luxury, craft preservation, and ecological well-being."
+                : "Đại diện cho sự lựa chọn cân bằng giữa trải nghiệm, con người và môi trường."
+              }
             </p>
           </motion.div>
         </div>
@@ -49,7 +72,10 @@ export function BrandStory() {
           className="p-8 md:p-12 bg-brand-cream rounded-3xl border border-brand-olive/10"
         >
           <p className="font-serif text-xl md:text-2xl text-brand-dark italic leading-relaxed">
-            Sợi Lành không định vị là thương hiệu "cứu thế giới". Thương hiệu bắt đầu bằng những thay đổi nhỏ nhưng thực tế trong từng phòng nghỉ.
+            {isEn
+              ? '"Sợi Lành does not aspire to save the world overnight. We begin with mindful, pragmatic, tangible transformations in each guest room."'
+              : "Sợi Lành không định vị là thương hiệu \"cứu thế giới\". Thương hiệu bắt đầu bằng những thay đổi nhỏ nhưng thực tế trong từng phòng nghỉ."
+            }
           </p>
         </motion.div>
       </div>

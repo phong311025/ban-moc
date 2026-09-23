@@ -12,7 +12,7 @@ export const products = [
       "2 xà phòng khổ qua mini",
       "1 túi đay Sợi Lành"
     ],
-    targetCustomers: ["Homestay", "Bungalow", "Glamping", "Các cơ sở muốn bắt đầu chuyển đổi amenities"],
+    targetCustomers: ["Homestay", "Bungalow", "Glamping", "Các cơ sở muốn bắt đầu chuyển đổi đồ dùng phòng xanh"],
     features: [
       { name: "Bàn chải tre", hoc: "2", tinhHoa: "2" },
       { name: "Lược tre", hoc: "1", tinhHoa: "1" },
@@ -29,7 +29,7 @@ export const products = [
     name: "Bản Tinh Hoa",
     slug: "ban-tinh-hoa",
     shortDescription: "Trải nghiệm hoàn thiện hơn với câu chuyện thương hiệu và điểm chạm xanh trong từng chi tiết.",
-    description: "Một trải nghiệm amenities hoàn thiện hơn, nơi sản phẩm và câu chuyện thương hiệu cùng xuất hiện trong phòng nghỉ.",
+    description: "Một trải nghiệm đồ dùng phòng hoàn thiện hơn, nơi sản phẩm và câu chuyện thương hiệu cùng xuất hiện trong phòng nghỉ.",
     includedItems: [
       "2 bàn chải tre tự nhiên",
       "1 lược tre nguyên khối",
@@ -65,7 +65,7 @@ export const materials = [
   {
     id: "kho-qua",
     name: "Khổ qua",
-    description: "Là cảm hứng nguyên liệu cho dòng xà phòng mini trong bộ amenities.",
+    description: "Là cảm hứng nguyên liệu cho dòng xà phòng mini trong bộ đồ dùng phòng khách.",
     image: "https://scontent.fhan5-2.fna.fbcdn.net/v/t1.15752-9/807858080_1749941002882013_7853054329665139707_n.png?stp=dst-png&cstp=mx1122x1402&ctp=s1122x1402&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeG2KqRq0BBkTF9iQ1WfpESd-xOR-WDSyTv7E5H5YNLJO4NgXIV8Sct2O1O7CfHgSN07RZVIQ4SwWJQDdZsbbT6w&_nc_ohc=nSnjmAn3bSkQ7kNvwE7jUNT&_nc_oc=Adq9ce-mBptBZUVR9qHyU9JrKNNSWXGfTC42efWY4CnCksA99Frm9ZKc3L_wOqnlSNI&_nc_zt=23&_nc_ht=scontent.fhan5-2.fna&_nc_ss=7b2a8&oh=03_Q7cD6QEX1_XTooCGiLUprZ6cL4s-Pgra8J8TkGH-x9CW7W-0GA&oe=6AD239D5"
   },
   {
@@ -87,37 +87,37 @@ export const individualProducts = [
     id: "ban-chai",
     name: "Bàn chải tre tự nhiên",
     description: "Bàn chải với thân tre tự nhiên, hình thức tối giản, phù hợp đặt trong phòng nghỉ.",
-    image: "https://images.unsplash.com/photo-1599598425947-330026218ea1?q=80&w=1974&auto=format&fit=crop"
+    image: "https://scontent-hkg4-1.xx.fbcdn.net/v/t1.15752-9/813965438_1405556648214689_5099788561089029791_n.jpg?stp=dst-jpg_tt6&cstp=mx1122x1129&ctp=s1122x1129&_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFppA0mKOH1y9cfffQaa1MTh_jzA7DzyCSH-PMDsPPIJD514eirhG0aoxjbjyEu21TM-w7wGiUHet59XUeOLe2v&_nc_ohc=iJyzGwZJF9UQ7kNvwEPjosl&_nc_oc=AdpSyakrmSWwqlr3lHS4IEaVfh9ZDy4kkQb1h6G4KKNW4kqgzc1v2q1Xy2OoU_OEsi2OvkJM-8UNdHOnuOUgMOUT&_nc_zt=23&_nc_ht=scontent-hkg4-1.xx&_nc_ss=7b2a8&oh=03_Q7cD6QHHO0Q8juETAxe3_8AoS1ZuemzN2mFxBbfVBFG22dqPXw&oe=6ADB41AD"
   },
   {
     id: "luoc-tre",
     name: "Lược tre nguyên khối",
-    description: "Lược tre có thiết kế liền khối, bề mặt mộc và đồng bộ với hệ amenities Sợi Lành.",
-    image: "https://images.unsplash.com/photo-1583091924765-9a67dd445250?q=80&w=2070&auto=format&fit=crop"
+    description: "Lược tre có thiết kế liền khối, bề mặt mộc và đồng bộ với hệ đồ dùng phòng Sợi Lành.",
+    image: "https://scontent-hkg4-1.xx.fbcdn.net/v/t1.15752-9/815765705_939695148720129_8854587069437577864_n.jpg?stp=dst-jpg_tt6&cstp=mx1122x1120&ctp=s1122x1120&_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeErUFV30kXh9Iy1WbU2KYpnb3bsh2ACcrVvduyHYAJytd_mmS3QNViW7vKMWk8Eyst6_YB07BUhML-KX9QIefsD&_nc_ohc=PL-4ZAaD110Q7kNvwGnj9yZ&_nc_oc=AdpuRr1-oCI1DImGSsfgYT-iw37PXrccUYy5WO9CHFysE7-pPr3Mn8mfPS8bj1cb3cevMQOVoh7xUqBGqulMvFS9&_nc_zt=23&_nc_ht=scontent-hkg4-1.xx&_nc_ss=7b2a8&oh=03_Q7cD6QHMliZBAPd-oeG568klgMPFFoKgkj5SNtmggxdhkw_JPw&oe=6ADB20FE"
   },
   {
     id: "xa-phong",
     name: "Xà phòng khổ qua mini",
     description: "Xà phòng kích thước nhỏ dành cho nhu cầu sử dụng trong thời gian lưu trú.",
-    image: "https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?q=80&w=2070&auto=format&fit=crop"
+    image: "https://scontent-hkg4-1.xx.fbcdn.net/v/t1.15752-9/815652863_912172451752233_6945264883147175062_n.jpg?stp=dst-jpg_tt6&cstp=mx1122x1080&ctp=s1122x1080&_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeH1J6iyR9eV6Z_5oZyW8IU4jquS3VdV7CqOq5LdV1XsKldwR-c2C4qwZ8D0WO73uYKwKkuHS5eybJnFU19ME1dk&_nc_ohc=KhLZ2APpV_wQ7kNvwGiNULr&_nc_oc=AdrHOtJqRw014Uk3vhqJ4OmQ-I5fKicOwkCdUXNpN5QnLowHEycluIJRMVYNuqUrOUEIVMvMS3CqVAt0w4822pvM&_nc_zt=23&_nc_ht=scontent-hkg4-1.xx&_nc_ss=7b2a8&oh=03_Q7cD6QGbG4hoSfAUFZv6sUCiv97cFBuqWjdw0-_3qJC0xviaPw&oe=6ADB2C26"
   },
   {
     id: "dep-xo-dua",
     name: "Dép xơ dừa tái chế",
     description: "Dép được phát triển theo định hướng tận dụng vật liệu xơ dừa, phù hợp với không gian lưu trú mang phong cách tự nhiên.",
-    image: "https://images.unsplash.com/photo-1623838425301-eb4c1f93f1cc?q=80&w=2070&auto=format&fit=crop"
+    image: "https://scontent-hkg1-1.xx.fbcdn.net/v/t1.15752-9/817383102_4532061377083187_1980868275864644208_n.jpg?stp=dst-jpg_tt6&cstp=mx1122x1088&ctp=s1122x1088&_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFLcm0RlcoljUSj8PTyCTIWc42IIWf6ZJVzjYghZ_pklaJh9f8ENtgLlXhoN4eqmntn5pftC7BXiokG31-tXvdl&_nc_ohc=qabdS2c1ccIQ7kNvwF-zy08&_nc_oc=AdoGvHQ5uDCpS4svRubZVXamfNhh9uJ1fcMLWsJJ-Bu0TaqCkd9yKYTkxbfjS6C8DfNyukPWrxWzHwgYt-1NiuUj&_nc_zt=23&_nc_ht=scontent-hkg1-1.xx&_nc_ss=7b2a8&oh=03_Q7cD6QFDoJEsAYPEH7f58KFpKEQ8TkBMJKpVB3jbA8nKVgbHkQ&oe=6ADB380F"
   },
   {
     id: "tam-bong",
     name: "Tăm bông thân tre sinh học",
-    description: "Sản phẩm bổ sung trong Bản Tinh Hoa, giúp hoàn thiện trải nghiệm amenities.",
-    image: "https://images.unsplash.com/photo-1609121899144-8da05fdbaf1d?q=80&w=2070&auto=format&fit=crop"
+    description: "Sản phẩm bổ sung trong Bản Tinh Hoa, giúp hoàn thiện trải nghiệm đồ dùng phòng.",
+    image: "https://scontent-hkg1-1.xx.fbcdn.net/v/t1.15752-9/817678718_2995290344164412_3973002011598633395_n.jpg?stp=dst-jpg_tt6&cstp=mx1122x1129&ctp=s1122x1129&_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGyaLociEY0DvMSuaEGfvp4mtV9yllTMe2a1X3KWVMx7TfOq3fUhXQpTevmV8d1MlosF1gAFyzL9Z-RE32oTXY9&_nc_ohc=zXY1BLgjRrMQ7kNvwFYhd-y&_nc_oc=AdpxLMEKfIIcNl-dJQskCXFDn-BMue2GrRYPk1T8aehYy9lGmwN_PUfbiUPhlB9LgeUlSln1CMcgtEXN99JfE8dv&_nc_zt=23&_nc_ht=scontent-hkg1-1.xx&_nc_ss=7b2a8&oh=03_Q7cD6QEcbFD9VB9ZzCrPRsMPScvT1KMDhJvYDQhRsDe9sY9PLA&oe=6ADB440A"
   },
   {
     id: "the-cau-chuyen",
     name: "Thẻ câu chuyện ESG tái chế",
     description: "Thẻ giới thiệu câu chuyện sản phẩm và thông điệp môi trường, có thể cá nhân hóa theo cơ sở lưu trú.",
-    image: "https://images.unsplash.com/photo-1507206130118-b5907f817163?q=80&w=1974&auto=format&fit=crop"
+    image: "https://scontent-hkg4-2.xx.fbcdn.net/v/t1.15752-9/815267181_957661530078223_1941260296930450692_n.jpg?stp=dst-jpg_tt6&cstp=mx1122x1090&ctp=s1122x1090&_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFzSlMiM4Pz9RKtonS2xJ6b6n7EdLLshH7qfsR0suyEftpHNXRqP334IJbWAfALTQUXYtJJ8Z_pSYzKua4JewHr&_nc_ohc=4-syWf-EGl0Q7kNvwEiWzg9&_nc_oc=Adr8tHDn0Pldyia_BDo8RxC4VYas6oHvjQehYVm_XH9NP-6onDoklZtzVV6BxgxYSGcJo_oWMy-CiINx-bRrP2N7&_nc_zt=23&_nc_ht=scontent-hkg4-2.xx&_nc_ss=7b2a8&oh=03_Q7cD6QEGgs9ijGg9lAh-vGouzDCzLbCInPCcDL56_Hg8wXVJMw&oe=6ADB4C33"
   }
 ];
 

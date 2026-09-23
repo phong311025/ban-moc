@@ -2,9 +2,21 @@ import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { Button } from "../ui/Button";
 import { SectionHeading } from "../ui/SectionHeading";
+import { useLanguage } from "../../context/LanguageContext";
 
 export function TargetAudience() {
-  const audiences = [
+  const { language } = useLanguage();
+  const isEn = language === "en";
+
+  const audiences = isEn ? [
+    "Homestays",
+    "Bungalows",
+    "Glamping",
+    "Boutique hotels",
+    "Villas",
+    "Eco-Resorts",
+    "Hotels",
+  ] : [
     "Homestay",
     "Bungalow",
     "Glamping",
@@ -14,14 +26,22 @@ export function TargetAudience() {
     "Khách sạn",
   ];
 
-  const benefits = [
+  const benefits = isEn ? [
+    "Volume-tiered B2B pricing",
+    "Recurring reliable supply",
+    "Flexible quantities per occupancy",
+    "Custom packaging & pouch embossing",
+    "Personalized ESG story cards",
+    "Green Room Experience onboarding",
+    "Harmonized with your brand aesthetic",
+  ] : [
     "Báo giá theo sản lượng",
-    "Cung ứng định kỳ",
-    "Điều chỉnh số lượng theo nhu cầu",
-    "Cá nhân hóa bao bì",
-    "Cá nhân hóa thẻ câu chuyện",
-    "Hỗ trợ triển khai Green Room Experience",
-    "Đồng bộ nhận diện với thương hiệu lưu trú",
+    "Cung ứng định kỳ ổn định",
+    "Điều chỉnh số lượng theo công suất phòng",
+    "Cá nhân hóa bao bì & in dập logo",
+    "Cá nhân hóa thẻ câu chuyện thương hiệu",
+    "Hỗ trợ triển khai Trải nghiệm phòng xanh (Green Room)",
+    "Đồng bộ nhận diện với thẩm mỹ không gian lưu trú",
   ];
 
   return (
@@ -30,13 +50,18 @@ export function TargetAudience() {
         
         <div className="flex-1 w-full">
           <SectionHeading 
-            title="Một bộ amenities. Một điểm chạm thương hiệu."
-            description="Sợi Lành hướng đến việc trở thành đối tác cung ứng định kỳ cho các cơ sở lưu trú, thay vì chỉ bán từng đơn hàng riêng lẻ."
+            title={isEn ? "One amenity kit. One meaningful touchpoint." : "Một bộ đồ dùng phòng khách. Một điểm chạm thương hiệu."}
+            description={isEn 
+              ? "Sợi Lành strives to be an enduring recurring amenities partner for accommodations, going beyond one-off transactions."
+              : "Sợi Lành hướng đến việc trở thành đối tác cung ứng đồ dùng phòng khách (amenities) định kỳ cho các cơ sở lưu trú, thay vì chỉ bán từng đơn hàng riêng lẻ."
+            }
             align="left"
           />
           
           <div className="mb-10">
-            <h4 className="text-sm font-semibold tracking-wider text-brand-subtext uppercase mb-4">Các quyền lợi B2B</h4>
+            <h4 className="text-sm font-semibold tracking-wider text-brand-subtext uppercase mb-4">
+              {isEn ? "B2B Partnership Benefits" : "Các quyền lợi B2B"}
+            </h4>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {benefits.map((benefit, index) => (
                 <li key={index} className="flex items-start gap-3 text-brand-text">
@@ -48,7 +73,9 @@ export function TargetAudience() {
           </div>
           
           <Link to="/lien-he?type=dung-thu">
-            <Button size="lg">Đăng ký nhận mẫu dùng thử</Button>
+            <Button size="lg">
+              {isEn ? "Request Complimentary Trial Kit" : "Đăng ký nhận mẫu dùng thử"}
+            </Button>
           </Link>
         </div>
         
@@ -61,7 +88,9 @@ export function TargetAudience() {
         >
           <div className="aspect-square relative rounded-full overflow-hidden bg-brand-cream border-8 border-brand-light shadow-2xl p-12 flex flex-col items-center justify-center text-center">
              <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1629731671842-88028ff79603?q=80&w=2070&auto=format&fit=crop')] bg-cover mix-blend-multiply pointer-events-none"></div>
-             <h3 className="font-serif text-3xl text-brand-dark mb-8 relative z-10">Phù hợp với</h3>
+             <h3 className="font-serif text-3xl text-brand-dark mb-8 relative z-10">
+               {isEn ? "Crafted for" : "Phù hợp với"}
+             </h3>
              <div className="flex flex-wrap justify-center gap-3 relative z-10">
                {audiences.map((audience, i) => (
                  <span key={i} className="bg-brand-light px-4 py-2 rounded-full text-sm font-medium text-brand-olive shadow-sm border border-brand-olive/10">

@@ -1,15 +1,18 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { Button } from "../ui/Button";
-import { products } from "../../data";
 import { SectionHeading } from "../ui/SectionHeading";
+import { useLanguage } from "../../context/LanguageContext";
 
 export function ComboProducts() {
+  const { products, language } = useLanguage();
+  const isEn = language === "en";
+
   return (
     <section className="py-24 bg-brand-light px-6">
       <div className="max-w-7xl mx-auto">
         <SectionHeading 
-          title="Hai lựa chọn. Một tinh thần Sợi Lành."
+          title={isEn ? "Two Choices. One Mindful Spirit." : "Hai lựa chọn. Một tinh thần Sợi Lành."}
         />
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
@@ -51,7 +54,9 @@ export function ComboProducts() {
                 </div>
                 
                 <Link to={`/san-pham/${product.slug}`} className="mt-auto block">
-                  <Button variant="outline" className="w-full">Khám phá {product.name}</Button>
+                  <Button variant="outline" className="w-full">
+                    {isEn ? `Explore ${product.name}` : `Khám phá ${product.name}`}
+                  </Button>
                 </Link>
               </div>
             </motion.div>

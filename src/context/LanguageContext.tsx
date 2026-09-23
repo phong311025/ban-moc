@@ -75,7 +75,7 @@ const translations = {
     // Hero
     "hero.title1": "Những lựa chọn lành",
     "hero.title2": "cho một kỳ nghỉ xanh hơn.",
-    "hero.description": "Sợi Lành mang đến những bộ đồ dùng phòng khách (amenities) được thiết kế đồng bộ từ các vật liệu thân thiện hơn với môi trường, giúp cơ sở lưu trú từng bước chuyển đổi trải nghiệm phòng nghỉ mà vẫn đảm bảo sự tiện lợi, thẩm mỹ và dấu ấn thương hiệu.",
+    "hero.description": "Sợi Lành mang đến những bộ đồ dùng tiêu hao được thiết kế đồng bộ từ các vật liệu thân thiện hơn với môi trường, giúp cơ sở lưu trú từng bước chuyển đổi trải nghiệm phòng nghỉ mà vẫn đảm bảo sự tiện lợi, thẩm mỹ và dấu ấn thương hiệu.",
     "hero.cta1": "Khám phá Sợi Lành",
     "hero.cta2": "Dành cho cơ sở lưu trú",
     "hero.bullet1": "Vật liệu tự nhiên và tái chế",
@@ -85,7 +85,7 @@ const translations = {
     // Target Audience
     "audience.eyebrow": "Đối tượng phù hợp",
     "audience.title": "Dành cho những không gian lưu trú quan tâm đến trải nghiệm xanh.",
-    "audience.desc": "Sợi Lành được phát triển để đồng hành cùng các mô hình lưu trú đang tìm kiếm giải pháp đồ dùng phòng tự nhiên, vừa vặn với ngân sách và thẩm mỹ không gian.",
+    "audience.desc": "Sợi Lành được phát triển để đồng hành cùng các mô hình lưu trú đang tìm kiếm giải pháp đồ dùng tiêu hao tự nhiên, vừa vặn với ngân sách và thẩm mỹ không gian.",
     "audience.homestay.title": "Homestay & Bungalow",
     "audience.homestay.desc": "Mong muốn sự mộc mạc, gần gũi với thiên nhiên và tối ưu chi phí vận hành.",
     "audience.glamping.title": "Glamping & Eco-resort",
@@ -106,7 +106,7 @@ const translations = {
     // Comparison
     "comp.eyebrow": "Bảng so sánh",
     "comp.title": "So sánh chi tiết 2 bộ sản phẩm",
-    "comp.desc": "Lựa chọn phương án đồ dùng phòng phù hợp nhất với mô hình vận hành của cơ sở.",
+    "comp.desc": "Lựa chọn phương án đồ dùng tiêu hao phù hợp nhất với mô hình vận hành của cơ sở.",
     "comp.feature": "Hạng mục",
     "comp.basic": "Cơ bản",
     "comp.advanced": "Nâng cao",
@@ -135,7 +135,7 @@ const translations = {
     // Personalization
     "pers.eyebrow": "Dấu ấn thương hiệu",
     "pers.title": "Để câu chuyện của bạn xuất hiện trong phòng nghỉ.",
-    "pers.desc": "Sợi Lành cung cấp các giải pháp cá nhân hóa linh hoạt, giúp mỗi bộ đồ dùng phòng (amenities) trở thành một phần tiếp nối trải nghiệm thương hiệu của cơ sở lưu trú.",
+    "pers.desc": "Sợi Lành cung cấp các giải pháp cá nhân hóa linh hoạt, giúp mỗi bộ đồ dùng tiêu hao trở thành một phần tiếp nối trải nghiệm thương hiệu của cơ sở lưu trú.",
     "pers.tag1": "Logo thương hiệu",
     "pers.desc1": "In hoặc dập logo cơ sở lưu trú trực tiếp lên túi đay, bao bì giấy hoặc chi tiết sản phẩm.",
     "pers.tag2": "Thẻ câu chuyện riêng",
@@ -160,10 +160,10 @@ const translations = {
     // Vision & Mission
     "vision.eyebrow": "Tầm nhìn",
     "vision.title": "Tầm nhìn của Sợi Lành",
-    "vision.desc": "Sợi Lành hướng tới trở thành thương hiệu và đối tác uy tín và đáng tin cậy tại Việt Nam cung cấp giải pháp đồ dùng phòng khách (amenities) thân thiện với môi trường, toàn diện và bền vững cho cơ sở lưu trú.",
+    "vision.desc": "Sợi Lành hướng tới trở thành thương hiệu và đối tác uy tín và đáng tin cậy tại Việt Nam cung cấp giải pháp đồ dùng tiêu hao thân thiện với môi trường, toàn diện và bền vững cho cơ sở lưu trú.",
     "mission.eyebrow": "Sứ mệnh",
     "mission.title": "Sứ mệnh của Sợi Lành",
-    "mission.text": "Sứ mệnh của Sợi Lành là cam kết mang đến cho các cơ sở lưu trú những giải pháp đồ dùng phòng khách thân thiện với môi trường, tiện lợi và phù hợp, góp phần nâng cao trải nghiệm khách lưu trú và thúc đẩy lối sống, kinh doanh theo hướng bền vững.",
+    "mission.text": "Sứ mệnh của Sợi Lành là cam kết mang đến cho các cơ sở lưu trú những giải pháp đồ dùng tiêu hao thân thiện với môi trường, tiện lợi và phù hợp, góp phần nâng cao trải nghiệm khách lưu trú và thúc đẩy lối sống, kinh doanh theo hướng bền vững.",
 
     // Green Room Experience
     "green.eyebrow": "Trải nghiệm",
@@ -461,7 +461,7 @@ const productsData = {
         "2 xà phòng khổ qua mini",
         "1 túi đay Sợi Lành"
       ],
-      targetCustomers: ["Homestay", "Bungalow", "Glamping", "Các cơ sở muốn bắt đầu chuyển đổi đồ dùng phòng xanh"],
+      targetCustomers: ["Homestay", "Bungalow", "Glamping", "Các cơ sở muốn bắt đầu chuyển đổi đồ dùng tiêu hao xanh"],
       features: [
         { name: "Bàn chải tre", hoc: "2", tinhHoa: "2" },
         { name: "Lược tre", hoc: "1", tinhHoa: "1" },
@@ -478,7 +478,7 @@ const productsData = {
       name: "Bản Tinh Hoa",
       slug: "ban-tinh-hoa",
       shortDescription: "Trải nghiệm hoàn thiện hơn với câu chuyện thương hiệu và điểm chạm xanh trong từng chi tiết.",
-      description: "Một trải nghiệm đồ dùng phòng hoàn thiện hơn, nơi sản phẩm và câu chuyện thương hiệu cùng xuất hiện trong phòng nghỉ.",
+      description: "Một trải nghiệm đồ dùng tiêu hao hoàn thiện hơn, nơi sản phẩm và câu chuyện thương hiệu cùng xuất hiện trong phòng nghỉ.",
       includedItems: [
         "2 bàn chải tre tự nhiên",
         "1 lược tre nguyên khối",
@@ -566,7 +566,7 @@ const materialsData = {
     {
       id: "kho-qua",
       name: "Khổ qua",
-      description: "Là cảm hứng nguyên liệu cho dòng xà phòng mini trong bộ đồ dùng phòng khách.",
+      description: "Là cảm hứng nguyên liệu cho dòng xà phòng mini trong bộ đồ dùng tiêu hao.",
       image: "https://scontent.fhan5-2.fna.fbcdn.net/v/t1.15752-9/807858080_1749941002882013_7853054329665139707_n.png?stp=dst-png&cstp=mx1122x1402&ctp=s1122x1402&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeG2KqRq0BBkTF9iQ1WfpESd-xOR-WDSyTv7E5H5YNLJO4NgXIV8Sct2O1O7CfHgSN07RZVIQ4SwWJQDdZsbbT6w&_nc_ohc=nSnjmAn3bSkQ7kNvwE7jUNT&_nc_oc=Adq9ce-mBptBZUVR9qHyU9JrKNNSWXGfTC42efWY4CnCksA99Frm9ZKc3L_wOqnlSNI&_nc_zt=23&_nc_ht=scontent.fhan5-2.fna&_nc_ss=7b2a8&oh=03_Q7cD6QEX1_XTooCGiLUprZ6cL4s-Pgra8J8TkGH-x9CW7W-0GA&oe=6AD239D5"
     },
     {
@@ -627,7 +627,7 @@ const individualProductsData = {
     {
       id: "luoc-tre",
       name: "Lược tre nguyên khối",
-      description: "Lược tre có thiết kế liền khối, bề mặt mộc và đồng bộ với hệ đồ dùng phòng Sợi Lành.",
+      description: "Lược tre có thiết kế liền khối, bề mặt mộc và đồng bộ với hệ đồ dùng tiêu hao Sợi Lành.",
       image: "https://scontent-hkg4-1.xx.fbcdn.net/v/t1.15752-9/815765705_939695148720129_8854587069437577864_n.jpg?stp=dst-jpg_tt6&cstp=mx1122x1120&ctp=s1122x1120&_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeErUFV30kXh9Iy1WbU2KYpnb3bsh2ACcrVvduyHYAJytd_mmS3QNViW7vKMWk8Eyst6_YB07BUhML-KX9QIefsD&_nc_ohc=PL-4ZAaD110Q7kNvwGnj9yZ&_nc_oc=AdpuRr1-oCI1DImGSsfgYT-iw37PXrccUYy5WO9CHFysE7-pPr3Mn8mfPS8bj1cb3cevMQOVoh7xUqBGqulMvFS9&_nc_zt=23&_nc_ht=scontent-hkg4-1.xx&_nc_ss=7b2a8&oh=03_Q7cD6QHMliZBAPd-oeG568klgMPFFoKgkj5SNtmggxdhkw_JPw&oe=6ADB20FE"
     },
     {
@@ -645,7 +645,7 @@ const individualProductsData = {
     {
       id: "tam-bong",
       name: "Tăm bông thân tre sinh học",
-      description: "Sản phẩm bổ sung trong Bản Tinh Hoa, giúp hoàn thiện trải nghiệm đồ dùng phòng.",
+      description: "Sản phẩm bổ sung trong Bản Tinh Hoa, giúp hoàn thiện trải nghiệm đồ dùng tiêu hao.",
       image: "https://scontent-hkg1-1.xx.fbcdn.net/v/t1.15752-9/817678718_2995290344164412_3973002011598633395_n.jpg?stp=dst-jpg_tt6&cstp=mx1122x1129&ctp=s1122x1129&_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGyaLociEY0DvMSuaEGfvp4mtV9yllTMe2a1X3KWVMx7TfOq3fUhXQpTevmV8d1MlosF1gAFyzL9Z-RE32oTXY9&_nc_ohc=zXY1BLgjRrMQ7kNvwFYhd-y&_nc_oc=AdpxLMEKfIIcNl-dJQskCXFDn-BMue2GrRYPk1T8aehYy9lGmwN_PUfbiUPhlB9LgeUlSln1CMcgtEXN99JfE8dv&_nc_zt=23&_nc_ht=scontent-hkg1-1.xx&_nc_ss=7b2a8&oh=03_Q7cD6QEcbFD9VB9ZzCrPRsMPScvT1KMDhJvYDQhRsDe9sY9PLA&oe=6ADB440A"
     },
     {
@@ -785,7 +785,7 @@ const teamMembersData = {
 const visionStepsData = {
   vi: [
     "Xây dựng vị thế trong phân khúc cơ sở lưu trú nhỏ và vừa",
-    "Phát triển từ nhà cung cấp của Sợi Lành thành đối tác cung ứng đồ dùng phòng định kỳ",
+    "Phát triển từ nhà cung cấp của Sợi Lành thành đối tác cung ứng đồ dùng tiêu hao định kỳ",
     "Mở rộng từ Sợi Lành Bản Mộc hay Tinh Hoa thành hệ sinh thái Sợi Lành Khởi sắc",
     "Xây dựng mạng lưới cung ứng xanh có khả năng kiểm soát và truy xuất"
   ],

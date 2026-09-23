@@ -32,7 +32,7 @@ export function Contact() {
           title={getTitle()}
           description={isEn
             ? "Leave your details and our team will get in touch to consult the most harmonious amenities solution for your establishment."
-            : "Hãy để lại thông tin, chúng tôi sẽ liên hệ để tư vấn giải pháp đồ dùng phòng (amenities) phù hợp nhất cho cơ sở lưu trú của bạn."
+            : "Hãy để lại thông tin, chúng tôi sẽ liên hệ để tư vấn giải pháp đồ dùng tiêu hao phù hợp nhất cho cơ sở lưu trú của bạn."
           }
         />
         

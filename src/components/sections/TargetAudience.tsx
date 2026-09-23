@@ -50,10 +50,10 @@ export function TargetAudience() {
         
         <div className="flex-1 w-full">
           <SectionHeading 
-            title={isEn ? "One amenity kit. One meaningful touchpoint." : "Một bộ đồ dùng phòng khách. Một điểm chạm thương hiệu."}
+            title={isEn ? "One amenity kit. One meaningful touchpoint." : "Một bộ đồ dùng tiêu hao. Một điểm chạm thương hiệu."}
             description={isEn 
               ? "Sợi Lành strives to be an enduring recurring amenities partner for accommodations, going beyond one-off transactions."
-              : "Sợi Lành hướng đến việc trở thành đối tác cung ứng đồ dùng phòng khách (amenities) định kỳ cho các cơ sở lưu trú, thay vì chỉ bán từng đơn hàng riêng lẻ."
+              : "Sợi Lành hướng đến việc trở thành đối tác cung ứng đồ dùng tiêu hao định kỳ cho các cơ sở lưu trú, thay vì chỉ bán từng đơn hàng riêng lẻ."
             }
             align="left"
           />

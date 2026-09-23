@@ -12,7 +12,7 @@ export const products = [
       "2 xà phòng khổ qua mini",
       "1 túi đay Sợi Lành"
     ],
-    targetCustomers: ["Homestay", "Bungalow", "Glamping", "Các cơ sở muốn bắt đầu chuyển đổi đồ dùng phòng xanh"],
+    targetCustomers: ["Homestay", "Bungalow", "Glamping", "Các cơ sở muốn bắt đầu chuyển đổi đồ dùng tiêu hao xanh"],
     features: [
       { name: "Bàn chải tre", hoc: "2", tinhHoa: "2" },
       { name: "Lược tre", hoc: "1", tinhHoa: "1" },
@@ -29,7 +29,7 @@ export const products = [
     name: "Bản Tinh Hoa",
     slug: "ban-tinh-hoa",
     shortDescription: "Trải nghiệm hoàn thiện hơn với câu chuyện thương hiệu và điểm chạm xanh trong từng chi tiết.",
-    description: "Một trải nghiệm đồ dùng phòng hoàn thiện hơn, nơi sản phẩm và câu chuyện thương hiệu cùng xuất hiện trong phòng nghỉ.",
+    description: "Một trải nghiệm đồ dùng tiêu hao hoàn thiện hơn, nơi sản phẩm và câu chuyện thương hiệu cùng xuất hiện trong phòng nghỉ.",
     includedItems: [
       "2 bàn chải tre tự nhiên",
       "1 lược tre nguyên khối",
@@ -65,7 +65,7 @@ export const materials = [
   {
     id: "kho-qua",
     name: "Khổ qua",
-    description: "Là cảm hứng nguyên liệu cho dòng xà phòng mini trong bộ đồ dùng phòng khách.",
+    description: "Là cảm hứng nguyên liệu cho dòng xà phòng mini trong bộ đồ dùng tiêu hao.",
     image: "https://scontent.fhan5-2.fna.fbcdn.net/v/t1.15752-9/807858080_1749941002882013_7853054329665139707_n.png?stp=dst-png&cstp=mx1122x1402&ctp=s1122x1402&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeG2KqRq0BBkTF9iQ1WfpESd-xOR-WDSyTv7E5H5YNLJO4NgXIV8Sct2O1O7CfHgSN07RZVIQ4SwWJQDdZsbbT6w&_nc_ohc=nSnjmAn3bSkQ7kNvwE7jUNT&_nc_oc=Adq9ce-mBptBZUVR9qHyU9JrKNNSWXGfTC42efWY4CnCksA99Frm9ZKc3L_wOqnlSNI&_nc_zt=23&_nc_ht=scontent.fhan5-2.fna&_nc_ss=7b2a8&oh=03_Q7cD6QEX1_XTooCGiLUprZ6cL4s-Pgra8J8TkGH-x9CW7W-0GA&oe=6AD239D5"
   },
   {
@@ -92,7 +92,7 @@ export const individualProducts = [
   {
     id: "luoc-tre",
     name: "Lược tre nguyên khối",
-    description: "Lược tre có thiết kế liền khối, bề mặt mộc và đồng bộ với hệ đồ dùng phòng Sợi Lành.",
+    description: "Lược tre có thiết kế liền khối, bề mặt mộc và đồng bộ với hệ đồ dùng tiêu hao Sợi Lành.",
     image: "https://scontent-hkg4-1.xx.fbcdn.net/v/t1.15752-9/815765705_939695148720129_8854587069437577864_n.jpg?stp=dst-jpg_tt6&cstp=mx1122x1120&ctp=s1122x1120&_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeErUFV30kXh9Iy1WbU2KYpnb3bsh2ACcrVvduyHYAJytd_mmS3QNViW7vKMWk8Eyst6_YB07BUhML-KX9QIefsD&_nc_ohc=PL-4ZAaD110Q7kNvwGnj9yZ&_nc_oc=AdpuRr1-oCI1DImGSsfgYT-iw37PXrccUYy5WO9CHFysE7-pPr3Mn8mfPS8bj1cb3cevMQOVoh7xUqBGqulMvFS9&_nc_zt=23&_nc_ht=scontent-hkg4-1.xx&_nc_ss=7b2a8&oh=03_Q7cD6QHMliZBAPd-oeG568klgMPFFoKgkj5SNtmggxdhkw_JPw&oe=6ADB20FE"
   },
   {
@@ -110,7 +110,7 @@ export const individualProducts = [
   {
     id: "tam-bong",
     name: "Tăm bông thân tre sinh học",
-    description: "Sản phẩm bổ sung trong Bản Tinh Hoa, giúp hoàn thiện trải nghiệm đồ dùng phòng.",
+    description: "Sản phẩm bổ sung trong Bản Tinh Hoa, giúp hoàn thiện trải nghiệm đồ dùng tiêu hao.",
     image: "https://scontent-hkg1-1.xx.fbcdn.net/v/t1.15752-9/817678718_2995290344164412_3973002011598633395_n.jpg?stp=dst-jpg_tt6&cstp=mx1122x1129&ctp=s1122x1129&_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGyaLociEY0DvMSuaEGfvp4mtV9yllTMe2a1X3KWVMx7TfOq3fUhXQpTevmV8d1MlosF1gAFyzL9Z-RE32oTXY9&_nc_ohc=zXY1BLgjRrMQ7kNvwFYhd-y&_nc_oc=AdpxLMEKfIIcNl-dJQskCXFDn-BMue2GrRYPk1T8aehYy9lGmwN_PUfbiUPhlB9LgeUlSln1CMcgtEXN99JfE8dv&_nc_zt=23&_nc_ht=scontent-hkg1-1.xx&_nc_ss=7b2a8&oh=03_Q7cD6QEcbFD9VB9ZzCrPRsMPScvT1KMDhJvYDQhRsDe9sY9PLA&oe=6ADB440A"
   },
   {

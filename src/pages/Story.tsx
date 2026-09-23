@@ -24,7 +24,7 @@ export function Story() {
             <blockquote className="font-serif text-xl sm:text-2xl md:text-3xl leading-relaxed italic max-w-4xl mx-auto text-brand-cream/95">
               {isEn 
                 ? '"Sợi Lành strives to become Vietnam\'s reputable and trusted partner providing eco-conscious, comprehensive, and sustainable amenities solutions for lodging establishments."'
-                : '"Sợi Lành hướng tới trở thành thương hiệu và đối tác uy tín và đáng tin cậy tại Việt Nam cung cấp giải pháp đồ dùng phòng khách (amenities) thân thiện với môi trường, toàn diện và bền vững cho cơ sở lưu trú."'
+                : '"Sợi Lành hướng tới trở thành thương hiệu và đối tác uy tín và đáng tin cậy tại Việt Nam cung cấp giải pháp đồ dùng tiêu hao thân thiện với môi trường, toàn diện và bền vững cho cơ sở lưu trú."'
               }
             </blockquote>
           </div>
@@ -40,7 +40,7 @@ export function Story() {
             <blockquote className="font-serif text-xl sm:text-2xl md:text-3xl leading-relaxed italic max-w-4xl mx-auto text-brand-cream/95">
               {isEn
                 ? '"Sợi Lành is committed to delivering eco-friendly, practical, and tailored amenities solutions to accommodations—enhancing the guest hospitality experience while driving sustainable living and conscientious business practices."'
-                : '"Sứ mệnh của Sợi Lành là cam kết mang đến cho các cơ sở lưu trú những giải pháp đồ dùng phòng khách thân thiện với môi trường, tiện lợi và phù hợp, góp phần nâng cao trải nghiệm khách lưu trú và thúc đẩy lối sống, kinh doanh theo hướng bền vững."'
+                : '"Sứ mệnh của Sợi Lành là cam kết mang đến cho các cơ sở lưu trú những giải pháp đồ dùng tiêu hao thân thiện với môi trường, tiện lợi và phù hợp, góp phần nâng cao trải nghiệm khách lưu trú và thúc đẩy lối sống, kinh doanh theo hướng bền vững."'
               }
             </blockquote>
           </div>

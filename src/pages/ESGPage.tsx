@@ -16,7 +16,7 @@ export function ESGPage() {
     "Build a transparent, controllable, and traceable green supply network"
   ] : [
     "Xây dựng vị thế trong phân khúc cơ sở lưu trú nhỏ và vừa",
-    "Phát triển từ nhà cung cấp của Sợi Lành thành đối tác cung ứng đồ dùng phòng định kỳ",
+    "Phát triển từ nhà cung cấp của Sợi Lành thành đối tác cung ứng đồ dùng tiêu hao định kỳ",
     "Mở rộng từ Sợi Lành Bản Mộc hay Tinh Hoa thành hệ sinh thái Sợi Lành Khởi sắc",
     "Xây dựng mạng lưới cung ứng xanh có khả năng kiểm soát và truy xuất"
   ];
@@ -32,7 +32,7 @@ export function ESGPage() {
             title={isEn ? "Our Strategic Vision" : "Tầm nhìn của Sợi Lành"}
             description={isEn 
               ? "Sợi Lành strives to become Vietnam's reputable and trusted partner providing eco-conscious, comprehensive, and sustainable amenities solutions for lodging establishments."
-              : "Sợi Lành hướng tới trở thành thương hiệu và đối tác uy tín và đáng tin cậy tại Việt Nam cung cấp giải pháp đồ dùng phòng khách (amenities) thân thiện với môi trường, toàn diện và bền vững cho cơ sở lưu trú."
+              : "Sợi Lành hướng tới trở thành thương hiệu và đối tác uy tín và đáng tin cậy tại Việt Nam cung cấp giải pháp đồ dùng tiêu hao thân thiện với môi trường, toàn diện và bền vững cho cơ sở lưu trú."
             }
           />
           
